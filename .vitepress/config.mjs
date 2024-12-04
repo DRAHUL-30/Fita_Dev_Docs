@@ -42,7 +42,13 @@ export default withMermaid({
           { text: 'Project structure', link: '/frontend/project-structure' },
         ]
       },
-
+      {
+        text: 'Backend',
+        collapsed: true,
+        items: [
+          { text: 'Project structure', link: '/backend/project-structure' },
+        ]
+      },
     ],
 
     socialLinks: [

@@ -8,61 +8,44 @@ frontend/
 │   └── manifest.json
 ├── src/
 │   ├── Components/
-│   │   ├── Action Center/
-│   │   ├── AdminManagement/
-│   │   │   ├── Role Management/
-│   │   │   │   ├── # application main files
-│   │   │   ├── Admin User Management/
-│   │   │   │   ├── # base user creation files
-│   │   │   ├── Trainer User Management/
-│   │   │   │   ├── # base trainer user creation files
-│   │   ├── AllStudents/
-│   │   ├── AppEnquiries/
-│   │   ├── Batch Management/
-│   │   ├── CommonFunctions/
-│   │   ├── Content Management/
-│   │   ├── Course Progress/
-│   │   ├── Dashboard/
-│   │   ├── Elements/
-│   │   └── Formik/
-│   │   └── Header/
-│   │   └── HR Student Placement/
-│   │   └── LeftNavbar/
-│   │   └── LoginScreen/
-│   │   └── Logs/
-│   │   └── MainComponent/
-│   │   └── Reports/
-│   │   └── RightSideScreens/
-│   │   └── Sample/
-│   │   └── StudentManagement/
-│   │   └── SubSections/
-│   │   │   ├── # sub sections of all base files
-│   │   └── UI_Modal/
+│   │   ├── FreeCourseVideo/
+│   │   ├── OtpScreen/
+│   │   ├── Resources/
+│   │   ├── TrainerModule/
+│   │   ├── applyJob/
+│   │   ├── beforeAssessment/
+│   │   ├── courseMaterials/
+│   │   ├── coursepage/
+│   │   ├── elements/
+│   │   ├── freeCourse/
+│   │   └── homepage/
+│   │   └── latestjob/
+│   │   └── layout/
+│   │   └── mobileNumber/
+│   │   └── myProfile/
+│   │   └── notification/
+│   │   └── searchCourse/
+│   │   └── signingoogle/
+│   │   └── signupForm/
+│   │   └── Protected.tsx
 │   ├── functions/
-│   │   ├── admin/
-│   │   └── config/
-│   │   └── Error/
-│   │   └── storage/
+│   │   ├── Error/
+│   │   └── Storage/
 │   │   └── Student/
+│   │   └── config/
 │   │   └── auth.ts
 │   │   └── commonHelper.ts
 │   │   └── crud.tsx
 │   ├── Redux/
-│   │   ├── Reducers/
-│   │   └── Types/
-│   │   └── Store.tsx
+│   │   ├── store/
+│   │   └── useReducer.tsx
 │   ├── Services/
-│   │   ├── BulkMailDeletion.css
-│   │   └── CommonFunctions.css
-│   │   └── PrivateRoute.css
-│   │   └── Supabase.css
-│   ├── utils/
-│   │   ├── config/
-│   │   ├── functions/
-│   │   └── json/
-│   ├── Assets/
-│   │   ├── dashboard/
-│   ├── services/
+│   │   ├── CommonFunctions.tsx
+│   │   └── OTP.tsx
+│   │   └── Supabase.tsx
+│   │   └── email.tsx
+│   ├── images/
+│   ├── content/
 │   ├── App.css
 │   ├── App.jsx
 │   └── index.css
@@ -76,26 +59,6 @@ Below you'll find descriptions for each file from the above diagram.
 
 # src
 
-### Components
-
-## AdminManagement
-
-Maintains the base role and user creation Components
-
-### Role Management/
-- Role creation under a role name by giving an access to specific tabs.
-
-### User Management/
-- User creation for login access and differentiated as a admin user, trainer user.
-
-## SubSections
-
-Page changes based on the sub actions when user clicks
-
-## Configuration
-
-Configuration Components for table level action creation and displaying existing actions
-
 ## Database
 
 - handles the database creation and its further Submenu
@@ -106,17 +69,6 @@ Configuration Components for table level action creation and displaying existing
 - parrent Components holds all icons
 - custom 404 pages
 - related fields selector Components
-
-## Submenu
-
-- holds all the Submenu for 
-    - Content Management
-    - Action Center
-    - HR Modules
-
-## tables
-
-- Common Table for all those current datas in DB can access through this tables.
 
 ## action
 
